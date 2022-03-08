@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <div id="logo">hyro</div>
+      <div id="nav">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><button id="signup">Sign Up</button></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="body">
+      <div id="left">
+        <div id="info">
+          <span id="title"
+            >Manage all your bank account with a single platform</span
+          >
+          <p id="desc">
+            Link all your bank account. create budgets, and get insights on your
+            spending.
+          </p>
+          <div id="buttons">
+            <button id="b1">Get Started</button>
+            <button id="b2">Learn More ➜</button>
+          </div>
+        </div>
+        <div id="integrations">
+          <span id="integrationPhrase">Integrated with</span>
+          <div id="integrationsPics">
+            <div id="brand"></div>
+            <div id="brand"></div>
+            <div id="brand"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="grid">
+          <div id="gridChild">
+            <h3>Account Summary</h3>
+            <div id="btsContainer" onclick="changeBtSide()">
+              <div class="btLeft" id="btBackground"></div>
+              <span id="bt1">Weekly</span>
+              <span id="bt2">Monthly</span>
+            </div>
+            <div class="values">
+              <div class="valuesTitle">Expenses</div>
+              <div class="valuesValue">
+                <div class="valuesDollarSign">$</div>
+                <div class="valuesDollarPrice">450</div>
+                <div class="valuesDollarCents">.00</div>
+              </div>
+            </div>
+            <div class="values">
+              <div class="valuesTitle">Income</div>
+              <div class="valuesValue">
+                <div class="valuesDollarSign">$</div>
+                <div class="valuesDollarPrice greenNumber">2,500</div>
+                <div class="valuesDollarCents greenNumber">.00</div>
+              </div>
+            </div>
+          </div>
+          <div id="gridChild">
+            <div id="budget">
+              <div id="remBudget">Remaining Budget</div>
+              <div class="valuesValue">
+                <div class="valuesDollarSign">$</div>
+                <div class="valuesDollarPrice smallFont">2,500</div>
+                <div class="valuesDollarCents">.00</div>
+              </div>
+            </div>
+            <div class="budgetCategory">
+                <div id="categoryTitle">👕 Fashion</div>
+                <div id="progress1"></div>
+                <div id="categoryInfo">
+                    <div id="bLimit">$800 limit</div>
+                    <div id="bLeft">$600.20 left</div>
+                </div>
+            </div>
+            <div class="budgetCategory">
+                <div id="categoryTitle">🎮 Gaming</div>
+                <div id="progress2"></div>
+                <div id="categoryInfo">
+                    <div id="bLimit">$600 limit</div>
+                    <div id="bLeft">$250 left</div>
+                </div>
+            </div>
+          </div>
+          <div id="gridChild">
+              <div id="billLogo"></div>
+              <div id="billInfo">
+                  <div id="billName">Spotify</div>
+                  <div id="billDescription">Monthly Subscription</div>
+              </div>
+              <div id="billPrice">$4.99</div>
+          </div>
+          <div id="gridChild">
+            <div id="billLogo"></div>
+            <div id="billInfo">
+                <div id="billName">Electricity Bill</div>
+                <div id="billDescription">Monthly</div>
+            </div>
+            <div id="billPrice">$600.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function changeBtSide() {
+      let bt = document.getElementById("btBackground");
+      if (bt.classList.value == "btLeft") {
+        bt.classList.toggle("btRight");
+        bt.classList.remove("btLeft");
+      } else {
+        bt.classList.toggle("btLeft");
+        bt.classList.remove("btRight");
+      }
+    }
+  </script>
+</html>

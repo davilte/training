@@ -1,0 +1,365 @@
+body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+#header {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  padding: 0 64px;
+}
+#logo {
+  flex: 1;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+#nav {
+  flex: 1;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+ul > li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+#signup {
+  background: #0f1317;
+  border: 0;
+  color: white;
+  border-radius: 32px;
+  font-size: 1.3rem;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+#body {
+  display: flex;
+  height: 100%;
+}
+#left {
+  width: 100%;
+  height: 100%;
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#title {
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 0 32px;
+}
+#desc {
+  font-size: 1.8rem;
+  opacity: 0.8;
+  padding: 16px 32px;
+  align-self: flex-start;
+  width: 70%;
+}
+
+#buttons {
+  align-self: flex-start;
+  padding: 0 32px;
+}
+
+#buttons button {
+  border: 0;
+  border-radius: 32px;
+  font-size: 1.2rem;
+  padding: 20px 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+#b1 {
+  background: #3c65fa;
+}
+#b2 {
+  background: #000000;
+}
+
+#integrations {
+  align-self: flex-start;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+#integrationPhrase {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+#integrationsPics {
+  display: flex;
+  gap: 16px;
+}
+#brand {
+  height: 48px;
+  width: 120px;
+  background: #ffffff10;
+}
+
+#right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#grid {
+  display: grid;
+  height: 60%;
+  width: 60%;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+#gridChild {
+  border-radius: 16px;
+  background: #0f1418;
+  display: flex;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#gridChild:nth-child(1) {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 4;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3),
+    50px 0 100px 50px rgba(82, 13, 13, 0.08),
+    50px 0 100px 50px rgb(0, 255, 98, 0.08),
+    50px 0 100px 50px rgba(0, 255, 255, 0.08);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#btsContainer {
+  background: black;
+  height: 40px;
+  width: 80%;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+#bt1,
+#bt2 {
+  font-size: 0.8rem;
+  z-index: 1;
+  font-weight: 600;
+  pointer-events: none;
+}
+#btBackground {
+  position: absolute;
+  height: 80%;
+  width: 45%;
+  border-radius: 48px;
+  background: #0f1418;
+}
+
+.btLeft {
+  left: 2%;
+}
+.btRight {
+  right: 2%;
+}
+
+.values:last-child {
+  margin-bottom: 24px;
+}
+
+.valuesTitle {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.valuesValue {
+  display: flex;
+  align-items: flex-start;
+}
+
+.valuesDollarSign {
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.valuesDollarPrice {
+  font-size: 3rem;
+  margin: -5px 4px 0 4px;
+}
+
+.valuesDollarCents {
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.greenNumber {
+  color: #37e592;
+}
+
+.smallFont {
+  font-size: 2rem;
+  margin-top: -2px;
+}
+
+#gridChild:nth-child(2) {
+  grid-column: span 2;
+  grid-row: 3 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 12px 0;
+}
+#budget,
+.budgetCategory {
+  width: 80%;
+  max-width: 80%;
+}
+
+#budget {
+  background: #000;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 16px;
+  height: 35%;
+}
+
+#remBudget {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.budgetCategory {
+  display: flex;
+  flex-direction: column;
+}
+
+#categoryTitle {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+#progress1 {
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+#progress1:after {
+  content: "";
+  position: absolute;
+  background: #3b66fb;
+  height: 100%;
+  width: 80%;
+  border-radius: 8px;
+}
+
+#progress2 {
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+#progress2:after {
+  content: "";
+  position: absolute;
+  background: #9b3bfb;
+  height: 100%;
+  width: 40%;
+  border-radius: 8px;
+}
+
+#categoryInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+#bLimit {
+  opacity: 0.6;
+}
+
+#gridChild:nth-child(3),
+#gridChild:last-child {
+  grid-column: 3 / span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+#billLogo {
+  height: 40px;
+  width: 40px;
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 100%;
+}
+
+#billInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#billDescription {
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+#billPrice {
+  font-size: 1.2rem;
+}
+
+#gridChild:last-child {
+  grid-column: 2 / span 3;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3), 100px 100px 1000px 500px rgba(0, 140, 255, 0.1),
+    100px 100px 1000px 500px rgba(0, 119, 255, 0.05);
+  z-index: -1;
+}
